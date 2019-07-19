@@ -1,0 +1,19 @@
+{
+  "SUNDAY FRESHLY MADE SOUP OF THE DAY": {
+    "Description": "Warm bread & butter",
+    "Allergies": "(V)",
+    "Price": "£5.50"
+  },
+  "ROAST TOPSIDE OF BEEF": {
+    "Description": "Yorkshire pudding, crisp roast potatoes, seasonal vegetables & rich red wine gravy",
+    "Price": "£13.95"
+  },
+  "VEGETABLE & HERB CRUMBLE": {
+    "Description": "Dry roasted root vegetables, leek & thyme in a light cheese sauce, topped with a parmesan & parsley crumb",
+    "Price": "£10.95"
+  },
+  "ROASTED HALF CHICKEN": {
+    "Description": "Roasted with caramalised lemon & rosemary, crisproast potatoes, Sunday vegetables, stuffing & gravy",
+    "Price": "£12.95"
+  }
+}	

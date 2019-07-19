@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript AJAX</title>
+
+    <link rel="stylesheet" href="projectstyle/style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to the Fab Pub Company (Est 2017)</h1>
+        <p id="description">Welcome to the Fab Pub Company. Check out our great menus by clicking on the buttons. Have an awesome day!</p>
+
+        <div id="leftDiv" class="panel">
+            <h2>Have a look at our menus...</h2>
+<input type="button" id="buttonMon" value="Mon - Fri">
+<input type="button" id="buttonSat" value="Saturday">
+<input type="button" id="buttonSun" value="Sunday">
+<ul id="menu"></ul>
+    
+<script>
+var today = new Date();
+var days =["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var daytoday = days[today.getDay()];
+
+var buttonMon = document.getElementById("buttonMon");
+buttonMon.addEventListener("click", loadAjaxMon);
+
+function loadAjaxMon()
+{
+var request = new XMLHttpRequest();
+request.open('GET', 'menu.json');
+request.onreadystatechange = function() {
+	if ((request.readyState===4) && (request.status===200)) {
+	var menus = JSON.parse(request.responseText);
+	var output = " ";
+	for (var key in menus) {
+	output += "<li> <em>" + key + "</em>: " + menus[key]["Description"]  + ", "  + menus[key]["Price"]  + " </li>";
+	}
+	var people = document.getElementById('menu');
+	menu.innerHTML = output;
+	}
+}
+request.send();
+}
+
+
+var buttonSat = document.getElementById("buttonSat");
+buttonSat.addEventListener("click", loadAjaxSat);
+function loadAjaxSat()
+{
+var request = new XMLHttpRequest();
+request.open('GET', 'menuSaturday.json');
+request.onreadystatechange = function() {
+	if ((request.readyState===4) && (request.status===200)) {
+	var menus = JSON.parse(request.responseText);
+	var output = " ";
+	for (var key in menus) {
+	output += "<li> <em>" + key + "</em>: " + menus[key]["Description"]  + ", "  + menus[key]["Price"]  + " </li>";
+	}
+	var people = document.getElementById('menu');
+	menu.innerHTML = output;
+	}
+}
+request.send();
+}
+
+
+var buttonSun = document.getElementById("buttonSun");
+buttonSun.addEventListener("click", loadAjaxSun);
+function loadAjaxSun()
+{
+var request = new XMLHttpRequest();
+request.open('GET', 'menuSunday.json');
+request.onreadystatechange = function() {
+	if ((request.readyState===4) && (request.status===200)) {
+	var menus = JSON.parse(request.responseText);
+	var output = " ";
+	for (var key in menus) {
+	output += "<li> <em>" + key + "</em>: " + menus[key]["Description"]  + ", "  + menus[key]["Price"]  + " </li>";
+	}
+	var people = document.getElementById('menu');
+	menu.innerHTML = output;
+	}
+}
+request.send();
+}
+
+
+    if (daytoday == "Sunday") {
+        loadAjaxSun()
+    } else if (daytoday == "Saturday") {
+        loadAjaxSat() 
+    } else {
+    loadAjaxMon() 
+    }       
+</script>
+           
+        </div>
+
+        <div id="searcharea" class="panel side-by-side">
+            <label for="search">Please search for a menu item</label>
+            <input type="search" name="search" id="search" placeholder="menu item" />
+            <div id="update"></div>
+            <script src="jquery.js"></script>
+            <script src="script.js"></script>
+        </div>
+        <div id="rightDiv" class="panel side-by-side">
+
+    
+            
+
+            <p>Visit our pubs and enjoy a convivial atmosphere, fine wines and food of a high quality as pictured in these royalty-free graphics</p>
+<img src="images/image-1.jpg" id="mainImage" alt="Looking out at the Pacific" width="350" height="315" class="articleImage" />
+
+        </div>
+
+    </div>
+
+    <script>
+        var myImage = document.getElementById("mainImage");
+var imageArray = ["images/image-1.jpg", "images/image-2.jpg", "images/image-3.jpg", "images/image-4.jpg", "images/image-5.jpg"];
+var imageIndex = 0;
+
+function changeImage() {
+	myImage.setAttribute("src",imageArray[imageIndex]);
+	imageIndex++;
+		if (imageIndex >= imageArray.length) {
+		imageIndex = 0;
+		}
+	}
+
+var intervalHandle = setInterval(changeImage,3000);
+myImage.onclick =  function() {
+	clearInterval(intervalHandle);
+};
+
+   
+    </script>
+    </body>
+    </html>

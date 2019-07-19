@@ -1,0 +1,85 @@
+[
+  {
+    "name":"FRESHLY MADE SOUP OF THE DAY",
+    "description":"Warm bread & butter",
+    "allergies": "(V)",
+    "price": "£5.50"
+  },
+    
+  {
+    "name":"CLASSIC FRENCH ONION SOUP",
+    "description":"Gruyère croutes",
+    "allergies": "",
+    "price": "£6.45"
+  },
+    
+  {
+    "name":"PAN SEARED LAMB’S LIVER",
+    "description":"Crisp pancetta, buttery mash, rich red wine & caramelised onion",
+    "allergies": "",
+    "price":  "£12.95"
+  },
+    
+  {
+    "name":"SAUSAGE & PANCETTA CASSEROLE",
+    "description":"Root vegetables, tomato & red wine casserole, pickled red cabbage, crusty bread & butter",
+    "allergies": "",
+    "price": "£10.95"
+  },
+    
+  {
+   "name":"SATURDAY SOUP OF THE DAY",
+    "description":"Warm bread & butter",
+    "allergies": "(V)",
+    "price": "£5.50"
+  },
+    
+  {
+    "name":"CAJUN CHICKEN WRAP",
+    "description":"Chicken fillet in a 12 spiced Cajun rub, mayonnaise, tomato & lettuce",
+    "allergies": "",
+    "price": "£7.95"
+  },
+    
+  {
+   "name":"SAUSAGES & MASH",
+    "description":"Trio of Cumberland sausages, buttery or wholegrain mustard mash",
+    "allergies": "",
+    "price": "£11.95"
+  },
+    
+  {
+    "name":"FISH & CHIPS",
+    "description":"Fresh fillet of cod in a crisp ale batter, crushed minted peas, chips & homemade tartare sauce",
+    "allergies": "",
+    "price": "£13.95"
+  },
+    
+  {
+    "name":"SUNDAY FRESHLY MADE SOUP OF THE DAY",
+    "description":"Warm bread & butter",
+    "allergies": "(V)",
+    "price": "£5.50"
+  },
+    
+{
+    "name":"ROAST TOPSIDE OF BEEF",
+    "description":"Yorkshire pudding, crisp roast potatoes, seasonal vegetables & rich red wine gravy",
+    "allergies": "",
+    "price": "£13.95"
+  },
+    
+{
+    "name":"VEGETABLE & HERB CRUMBLE",
+    "description":"Dry roasted root vegetables, leek & thyme in a light cheese sauce, topped with a parmesan & parsley crumb",
+    "allergies": "",
+    "price": "£10.95"
+  },
+    
+{
+    "name":"ROASTED HALF CHICKEN",
+    "description":"Roasted with caramalised lemon & rosemary, crisproast potatoes, Sunday vegetables, stuffing & gravy",
+    "allergies": "",
+    "price": "£12.95"
+  }    
+]

@@ -1,0 +1,19 @@
+{
+  "FRESHLY MADE SOUP OF THE DAY": {
+    "Description": "Warm bread & butter",
+    "Allergies": "(V)",
+    "Price": "£5.50"
+  },
+  "CLASSIC FRENCH ONION SOUP": {
+    "Description": "Gruyère croutes",
+    "Price": "£6.45"
+  },
+  "PAN SEARED LAMB’S LIVER": {
+    "Description": "Crisp pancetta, buttery mash, rich red wine & caramelised onion",
+    "Price": " £12.95"
+  },
+  "SAUSAGE & PANCETTA CASSEROLE": {
+    "Description": "Root vegetables, tomato & red wine casserole, pickled red cabbage, crusty bread & butter",
+    "Price": "£10.95"
+  }
+}

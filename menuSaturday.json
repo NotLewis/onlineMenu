@@ -1,0 +1,19 @@
+{
+  "SATURDAY SOUP F THE DAY": {
+    "Description": "Warm bread & butter",
+    "Allergies": "(V)",
+    "Price": "£5.50"
+  },
+  "CAJUN CHICKEN WRAP": {
+    "Description": "Chicken fillet in a 12 spiced Cajun rub, mayonnaise, tomato & lettuce",
+    "Price": "£7.95"
+  },
+  "SAUSAGES & MASH": {
+    "Description": "Trio of Cumberland sausages, buttery or wholegrain mustard mash",
+    "Price": "£11.95"
+  },
+  "FISH & CHIPS": {
+    "Description": "Fresh fillet of cod in a crisp ale batter, crushed minted peas, chips & homemade tartare sauce",
+    "Price": "£13.95"
+  }
+}	
